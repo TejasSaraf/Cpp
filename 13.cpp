@@ -1,24 +1,26 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-class addition{
+class addition
+{
     int a;
     int b;
-    public:
-    void setdata(int x,int y){
-        a=x;
-        b=y;
+
+public:
+    void setdata(int x, int y)
+    {
+        a = x;
+        b = y;
     }
     void getdata()
     {
-        cout<<a<<" "<<b<<endl;
+        cout << a << " " << b << endl;
     }
-    
 };
 int main()
 {
-    addition a1,a2;
-    a1.setdata(3,4);
+    addition a1, a2;
+    a1.setdata(3, 4);
     a1.getdata();
     return 0;
 }

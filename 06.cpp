@@ -1,31 +1,35 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-class Employee{
+class Employee
+{
 
     int id;
     static int count;
-    public:
+
+public:
     void setdata(void);
     void getdata(void);
-    static void getcount(void){
-        cout<<"The Count is:"<<count;
+    static void getcount(void)
+    {
+        cout << "The Count is:" << count;
     }
 };
-int Employee :: count;
-void Employee::setdata(){
-    cout<<"Enter id:";
-    cin>>id;
+int Employee ::count;
+void Employee::setdata()
+{
+    cout << "Enter id:";
+    cin >> id;
     count++;
 }
-void Employee::getdata(){
-    cout<<"The employee id:"<<id<<endl;
+void Employee::getdata()
+{
+    cout << "The employee id:" << id << endl;
 }
-
 
 int main()
 {
-    Employee e1,e2,e3;
+    Employee e1, e2, e3;
     e1.setdata();
     e1.getdata();
     e1.getcount();

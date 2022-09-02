@@ -16,7 +16,7 @@ public:
 
 void binary ::read(void)
 {
-    
+
     cout << "Enter String:";
     cin >> s;
 }
@@ -51,7 +51,7 @@ void binary ::ones(void)
 
 void binary ::display(void)
 {
-    cout<<"Displaying your binary number"<<endl;
+    cout << "Displaying your binary number" << endl;
     for (int i = 0; i < s.length(); i++)
     {
         cout << s[i];

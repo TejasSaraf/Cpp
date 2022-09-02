@@ -1,22 +1,28 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-class employee{
+class employee
+{
     static int count;
     int id;
-    public:
-    void setdata(){
-        cin>>id;
+
+public:
+    void setdata()
+    {
+        cin >> id;
         count++;
     }
-    void getdata(){
-        cout<<"The id of employee "<<count<<" "<<"is"<<" "<<id<<endl;
+    void getdata()
+    {
+        cout << "The id of employee " << count << " "
+             << "is"
+             << " " << id << endl;
     }
 };
-int employee :: count;
+int employee ::count;
 int main()
 {
-    employee e1,e2,e3;
+    employee e1, e2, e3;
     e1.setdata();
     e1.getdata();
 

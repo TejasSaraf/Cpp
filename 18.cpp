@@ -1,29 +1,33 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 class X;
-class Y{
+class Y
+{
     int b;
-    public:
+
+public:
     void setdata(int y)
     {
-        b=y;
+        b = y;
     }
-    friend void display(X , Y);
+    friend void display(X, Y);
 };
 
-class X{
+class X
+{
     int a;
-    public:
+
+public:
     void getdata(int x)
     {
-        a=x;
+        a = x;
     }
-    friend void display(X,Y);
+    friend void display(X, Y);
 };
-void display(X o1,Y o2)
+void display(X o1, Y o2)
 {
-    cout<<"Addition:"<<o1.a+o2.b<<endl;
+    cout << "Addition:" << o1.a + o2.b << endl;
 }
 
 int main()
@@ -32,6 +36,6 @@ int main()
     Y y1;
     x1.getdata(2);
     y1.setdata(6);
-    display(x1,y1);
+    display(x1, y1);
     return 0;
 }

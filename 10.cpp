@@ -20,7 +20,6 @@ void student ::setdata()
     cin >> age;
     cout << "Enter gender:" << endl;
     cin >> gender;
-    
 }
 void student ::getdata()
 {
